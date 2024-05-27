@@ -55,7 +55,6 @@
   const width = writable(checkWindow ? window.innerWidth : 0);
   const checkScreen = derived(width, ($width) => $width >= 1024);
   const checkScreenMB = derived(width, ($width) => $width < 1024);
-  let currentIndex = 0;
   let carousel;
   let carousel_construction;
   let carousel_Partner;

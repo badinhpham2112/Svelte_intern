@@ -55,26 +55,44 @@
             <ul
               class="flex justify-center py-[17px] gap-[30px] items-center flex-wrap"
             >
-              <li class="text-[13px] font-semibold text-[#777E90]">
+              <li
+                class="text-[13px] cursor-pointer font-semibold text-[#777E90]"
+              >
                 Giới Thiệu
               </li>
-              <li class="text-[13px] font-semibold text-[#777E90]">
+              <li
+                class="text-[13px] cursor-pointer font-semibold text-[#777E90]"
+              >
                 Thông điệp
               </li>
-              <li class="text-[13px] font-semibold text-[#777E90]">
+              <li
+                class="text-[13px] cursor-pointer font-semibold text-[#777E90]"
+              >
                 Master Builder
               </li>
-              <li class="text-[13px] font-semibold text-[#777E90]">Lịch Sử</li>
-              <li class="text-[13px] font-semibold text-[#777E90]">
+              <li
+                class="text-[13px] cursor-pointer font-semibold text-[#777E90]"
+              >
+                Lịch Sử
+              </li>
+              <li
+                class="text-[13px] cursor-pointer font-semibold text-[#777E90]"
+              >
                 Tầm Nhìn - Sứ Mệnh
               </li>
-              <li class="text-[13px] font-semibold text-[#777E90]">
+              <li
+                class="text-[13px] cursor-pointer font-semibold text-[#777E90]"
+              >
                 Đội ngũ kỹ sư
               </li>
-              <li class="text-[13px] font-semibold text-[#777E90]">
+              <li
+                class="text-[13px] cursor-pointer font-semibold text-[#777E90]"
+              >
                 Chứng Nhận
               </li>
-              <li class="text-[13px] font-semibold text-[#777E90]">
+              <li
+                class="text-[13px] cursor-pointer font-semibold text-[#777E90]"
+              >
                 Khách Hàng - Đối Tác
               </li>
             </ul>
@@ -102,7 +120,7 @@
             class="w-full left-0 mt-[-1px] hidden group-hover:block fixed bg-[#F0F3F6]"
           >
             <div class="max-w-[1170px] flex gap-[30px] py-[53px] mx-auto">
-              <div class="relative">
+              <div class="relative cursor-pointer">
                 <img src={carried} alt="" class="max-h-[330px]" />
                 <div class="absolute top-0 left-0">
                   <p
@@ -118,7 +136,7 @@
                 </div>
               </div>
 
-              <div class="relative">
+              <div class="relative cursor-pointer">
                 <img src={Accomplished} alt="" class="max-h-[330px]" />
                 <div class="absolute top-0 left-0">
                   <p

@@ -412,16 +412,19 @@
         class=" max-w-[1170px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8"
       >
         <div>
-          <div class="py-5">
-            <span
-              class="w-full uppercase text-[32px] font-semibold text-[#212163]"
+          <div class="py-5 lg:flex">
+            <p
+              class="w-full lg:w-[70%] lg:flex lg:flex-col uppercase text-[32px] font-semibold text-[#212163]"
             >
-              Dự án <p class="text-[#FB342E] p-0">đang thực hiện</p>
-            </span>
-            <div class="flex uppercase gap-4 items-center w-full">
+              Dự án <span class="text-[#FB342E] p-0">đang thực hiện</span>
+            </p>
+            <a
+              href="#"
+              class="flex uppercase lg:w-[30%] lg:justify-end gap-4 items-center w-full"
+            >
               <span class="text-sm text-[#777E90] font-semibold">Xem thêm</span>
               <img src={seeMore} alt="" />
-            </div>
+            </a>
           </div>
           <div class="relative group">
             <Carousel
@@ -450,8 +453,10 @@
                 </div>
               {/each}
             </Carousel>
-            <div class="hidden group-hover:block p-[-5px]">
-              <div class="absolute inset-0 flex items-center justify-between">
+            <div class="hidden group-hover:block">
+              <div
+                class="absolute inset-0 z-10 flex !top-[-34%] items-center justify-between"
+              >
                 <button
                   on:click={handlePrevOngoingprojectsClick}
                   class="bg-black z-10 opacity-50 hover:bg-[#FB342E]"
@@ -472,18 +477,24 @@
 
         <div>
           <div class="py-5">
-            <span
-              class="w-full uppercase text-[32px] font-semibold text-[#212163]"
-            >
-              Dự án <p class="text-[#FB342E] p-0">đã hoàn thành</p>
-            </span>
-            <div class="flex uppercase gap-4 items-center w-full">
-              <span class="text-sm text-[#777E90] font-semibold">Xem thêm</span>
-              <img src={seeMore} alt="" />
+            <div class="lg:flex">
+              <span
+                class="w-full lg:w-[70%] uppercase text-[32px] font-semibold text-[#212163]"
+              >
+                Dự án <p class="text-[#FB342E] p-0">đã hoàn thành</p>
+              </span>
+              <a
+                href="#"
+                class="flex lg:w-[30%] uppercase lg:justify-end gap-4 items-center w-full"
+              >
+                <span class="text-sm text-[#777E90] font-semibold"
+                  >Xem thêm</span
+                >
+                <img src={seeMore} alt="" />
+              </a>
             </div>
           </div>
 
-          <!-- <div class="grid grid-cols-2"> -->
           <div class="flex flex-col gap-8 lg:grid lg:grid-cols-2 pb-12">
             {#each Accomplisheds as Accomplished}
               <div class="">
@@ -509,7 +520,6 @@
               </div>
             {/each}
           </div>
-          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -535,7 +545,11 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 pb-10">
           <div>
             <div class="pt-4 lg:pr-4 flex flex-col">
-              <img src={outstanding1} alt="" class="min-w-full object-cover" />
+              <img
+                src={outstanding1}
+                alt=""
+                class="min-w-full object-cover cut_above_and_below"
+              />
               <div class="px-5 flex flex-col">
                 <span
                   class="text-[14px] font-semibold text-[#FB342E] pb-[14px] pt-6"
@@ -566,7 +580,11 @@
             <div
               class="pt-4 lg:border-x lg:border-x-[#DBDFE4] lg:px-4 flex flex-col"
             >
-              <img src={outstanding2} alt="" class="min-w-full object-cover" />
+              <img
+                src={outstanding2}
+                alt=""
+                class="min-w-full object-cover cut_above_and_below"
+              />
               <div class="px-5 flex flex-col">
                 <span
                   class="text-[14px] font-semibold text-[#FB342E] pb-[14px] pt-6"
@@ -596,7 +614,11 @@
             <div
               class="pt-4 lg:px-4 lg:border-r lg:border-r-[#DBDFE4] flex flex-col"
             >
-              <img src={outstanding3} alt="" class="min-w-full object-cover" />
+              <img
+                src={outstanding3}
+                alt=""
+                class="min-w-full object-cover cut_above_and_below"
+              />
               <div class="px-5 flex flex-col">
                 <span
                   class="text-[14px] font-semibold text-[#FB342E] pb-[14px] pt-6"
@@ -625,7 +647,11 @@
 
           <div>
             <div class="pt-4 lg:px-4 flex flex-col">
-              <img src={outstanding4} alt="" class="min-w-full object-cover" />
+              <img
+                src={outstanding4}
+                alt=""
+                class="min-w-full object-cover cut_above_and_below"
+              />
               <div class="px-5 flex flex-col">
                 <span
                   class="text-[14px] font-semibold text-[#FB342E] pb-[14px] pt-6"
@@ -882,3 +908,9 @@
     <ButtonScrollTop />
   </div>
 </div>
+
+<style>
+  .cut_above_and_below {
+    clip-path: polygon(8% 0, 100% 0, 100% 91%, 93% 100%, 0 100%, 0 12%);
+  }
+</style>
