@@ -831,8 +831,7 @@
                     class="min-w-[270px] max-h-[330px]"
                   />
                   <div
-                    class="bg-[#FB342E] w-[250px] absolute flex flex-col gap-[6px] justify-center items-center bottom-0 left-0 py-6"
-                    style="border-top-right-radius:50px;"
+                    class="bg-[#FB342E] cut-corner w-[250px] absolute flex flex-col gap-[6px] justify-center items-center bottom-0 left-0 py-6"
                   >
                     <span class="text-white text-xl font-semibold">
                       {leader.value[1]}
@@ -871,8 +870,7 @@
                     </div>
 
                     <div
-                      class="bg-[#FB342E] w-[250px] absolute flex flex-col items-center bottom-0 py-6"
-                      style="border-top-right-radius:50px;"
+                      class="cut-corner bg-[#FB342E] w-[250px] absolute flex flex-col gap-[6px] justify-center items-center bottom-0 left-0 py-6"
                     >
                       <span class="text-white text-xl font-semibold"
                         >{leader.value[1]}</span
@@ -1131,6 +1129,9 @@
 </div>
 
 <style>
+  .cut-corner {
+    clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 0% 100%);
+  }
   .border-r-triangle::before {
     content: "";
     position: absolute;
